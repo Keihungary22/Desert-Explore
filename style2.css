@@ -1,0 +1,675 @@
+#gamescreen{
+    border-radius: 12px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 700px;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+}
+
+#game_progress{
+    border-radius: 12px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 240px;
+    height: 300px;
+    background-color: rgb(255, 228, 159);
+    border: 2px solid rgb(0, 0, 0);
+}
+#countdown{
+    position: fixed;
+    top: 30px;
+    left: 85px;
+    font-size: 40px;
+}
+#prImg1{
+    position: fixed;
+    top: 90px;
+    left: 60px;
+}
+#pr1{
+    position: fixed;
+    top: 30px;
+    left: 160px;
+    font-size: 60px;
+}
+#prImg2{
+    position: fixed;
+    top: 160px;
+    left: 60px;
+}
+#pr2{
+    position: fixed;
+    top: 100px;
+    left: 160px;
+    font-size: 60px;
+}
+#prImg3{
+    position: fixed;
+    top: 230px;
+    left: 60px;
+}
+#pr3{
+    position: fixed;
+    top: 170px;
+    left: 160px;
+    font-size: 60px;
+}
+
+#p1_info{
+    border-radius: 12px;
+    position: fixed;
+    top: 10px;
+    left: 252px;
+    width: 230px;
+    height: 148px;
+    background-color: rgb(255, 228, 159);
+    border: 2px solid rgb(0, 0, 0);
+}
+#p1_name{
+    position: fixed;
+    top: 0.5px;
+    left: 270px;
+    font-size: 30px;
+    color: rgb(167, 51, 51);
+}
+#water_p1{
+    position: fixed;
+    top: 75px;
+    left: 270px;
+}
+#water_num_p1{
+    position: fixed;
+    top: 50px;
+    left: 320px;
+    font-size: 30px;
+}
+#action_p1{
+    position: fixed;
+    top: 75px;
+    left: 350px;
+}
+#action_num_p1{
+    position: fixed;
+    top: 50px;
+    left: 400px;
+    font-size: 30px;
+}
+#p1_turn{
+    position: fixed;
+    top: 105px;
+    left: 280px;
+    font-size: 20px;
+}
+
+#p2_info{
+    border-radius: 12px;
+    position: fixed;
+    top: 160px;
+    left: 252px;
+    width: 230px;
+    height: 150px;
+    background-color: rgb(255, 228, 159);
+    border: 2px solid rgb(0, 0, 0);
+}
+#p2_name{
+    position: fixed;
+    top: 150.5px;
+    left: 270px;
+    font-size: 30px;
+    color: rgb(48, 66, 171);
+}
+#water_p2{
+    position: fixed;
+    top: 225px;
+    left: 270px;
+}
+#water_num_p2{
+    position: fixed;
+    top: 200px;
+    left: 320px;
+    font-size: 30px;
+}
+#action_p2{
+    position: fixed;
+    top: 225px;
+    left: 350px;
+}
+#action_num_p2{
+    position: fixed;
+    top: 200px;
+    left: 400px;
+    font-size: 30px;
+}
+#p2_turn{
+    position: fixed;
+    top: 255px;
+    left: 280px;
+    font-size: 20px;
+}
+
+#p3_info{
+    border-radius: 12px;
+    position: fixed;
+    top: 10px;
+    left: 484px;
+    width: 228px;
+    height: 148px;
+    background-color: rgb(255, 228, 159);
+    border: 2px solid rgb(0, 0, 0);
+}
+#p3_name{
+    position: fixed;
+    top: 0.5px;
+    left: 503px;
+    font-size: 30px;
+    color: rgb(47, 161, 56);
+}
+#water_p3{
+    position: fixed;
+    top: 75px;
+    left: 503px;
+}
+#water_num_p3{
+    position: fixed;
+    top: 50px;
+    left: 553px;
+    font-size: 30px;
+}
+#action_p3{
+    position: fixed;
+    top: 75px;
+    left: 582px;
+}
+#action_num_p3{
+    position: fixed;
+    top: 50px;
+    left: 632px;
+    font-size: 30px;
+}
+#p3_turn{
+    position: fixed;
+    top: 105px;
+    left: 512px;
+    font-size: 20px;
+}
+
+#p4_info{
+    border-radius: 12px;
+    position: fixed;
+    top: 160px;
+    left: 484px;
+    width: 228px;
+    height: 150px;
+    background-color: rgb(255, 228, 159);
+    border: 2px solid rgb(0, 0, 0);
+}
+#p4_name{
+    position: fixed;
+    top: 150.5px;
+    left: 503px;
+    font-size: 30px;
+    color: rgb(247, 190, 19);
+}
+#water_p4{
+    position: fixed;
+    top: 225px;
+    left: 503px;
+}
+#water_num_p4{
+    position: fixed;
+    top: 200px;
+    left: 553px;
+    font-size: 30px;
+}
+#action_p4{
+    position: fixed;
+    top: 225px;
+    left: 582px;
+}
+#action_num_p4{
+    position: fixed;
+    top: 200px;
+    left: 632px;
+    font-size: 30px;
+}
+#p4_turn{
+    position: fixed;
+    top: 255px;
+    left: 512px;
+    font-size: 20px;
+}
+
+#board{
+    border-radius: 12px;
+    position: fixed;
+    top: 312px;
+    left: 10px;
+    width: 514px;
+    height: 514px;
+    background-color: rgb(255, 228, 159);
+    border:  2px solid black;
+}
+#mt0{
+    border-radius: 12px;
+    position: fixed;
+    top: 320px;
+    left: 18px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+
+}
+#mt1{
+    border-radius: 12px;
+    position: fixed;
+    top: 320px;
+    left: 119px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt2{
+    border-radius: 12px;
+    position: fixed;
+    top: 320px;
+    left: 220px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt3{
+    border-radius: 12px;
+    position: fixed;
+    top: 320px;
+    left: 321px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt4{
+    border-radius: 12px;
+    position: fixed;
+    top: 320px;
+    left: 422px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt5{
+    border-radius: 12px;
+    position: fixed;
+    top: 421px;
+    left: 18px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt6{
+    border-radius: 12px;
+    position: fixed;
+    top: 421px;
+    left: 119px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt7{
+    border-radius: 12px;
+    position: fixed;
+    top: 421px;
+    left: 220px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt8{
+    border-radius: 12px;
+    position: fixed;
+    top: 421px;
+    left: 321px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt9{
+    border-radius: 12px;
+    position: fixed;
+    top: 421px;
+    left: 422px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt10{
+    border-radius: 12px;
+    position: fixed;
+    top: 522px;
+    left: 18px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt11{
+    border-radius: 12px;
+    position: fixed;
+    top: 522px;
+    left: 119px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt12{
+    border-radius: 12px;
+    position: fixed;
+    top: 522px;
+    left: 220px;
+    width: 97px;
+    height: 97px;
+    background-color: rgba(220, 176, 66, 0);
+}
+#mt13{
+    border-radius: 12px;
+    position: fixed;
+    top: 522px;
+    left: 321px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt14{
+    border-radius: 12px;
+    position: fixed;
+    top: 522px;
+    left: 422px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt15{
+    border-radius: 12px;
+    position: fixed;
+    top: 623px;
+    left: 18px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt16{
+    border-radius: 12px;
+    position: fixed;
+    top: 623px;
+    left: 119px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt17{
+    border-radius: 12px;
+    position: fixed;
+    top: 623px;
+    left: 220px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt18{
+    border-radius: 12px;
+    position: fixed;
+    top: 623px;
+    left: 321px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt19{
+    border-radius: 12px;
+    position: fixed;
+    top: 623px;
+    left: 422px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt20{
+    border-radius: 12px;
+    position: fixed;
+    top: 724px;
+    left: 18px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt21{
+    border-radius: 12px;
+    position: fixed;
+    top: 724px;
+    left: 119px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt22{
+    border-radius: 12px;
+    position: fixed;
+    top: 724px;
+    left: 220px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt23{
+    border-radius: 12px;
+    position: fixed;
+    top: 724px;
+    left: 321px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+#mt24{
+    border-radius: 12px;
+    position: fixed;
+    top: 724px;
+    left: 422px;
+    width: 97px;
+    height: 97px;
+    background-color: rgb(220, 177, 66);
+}
+
+#player{
+    border-radius: 12px;
+    position: fixed;
+    top: 522px;
+    left: 220px;
+    z-index: 1;
+}
+#stargate{
+    border-radius: 12px;
+    position: fixed;
+    top: 522px;
+    left: 220px;
+}
+#oasis_pre1{
+    position: fixed;
+}
+#oasis_pre2{
+    position: fixed;
+}
+#oasis_pre3{
+    position: fixed;
+}
+#oasis_pre4{
+    position: fixed;
+}
+#oasis1{
+    position: fixed;
+}
+#oasis2{
+    position: fixed;
+}
+#oasis3{
+    position: fixed;
+}
+#drought{
+    position: fixed;
+}
+#hole{
+    position: fixed;
+}
+
+#item1_clue_up{
+    position: fixed;
+}
+#item1_clue_down{
+    position: fixed;
+}
+#item1_clue_left{
+    position: fixed;
+}
+#item1_clue_right{
+    position: fixed;
+}
+#item2_clue_up{
+    position: fixed;
+}
+#item2_clue_down{
+    position: fixed;
+}
+#item2_clue_left{
+    position: fixed;
+}
+#item2_clue_right{
+    position: fixed;
+}
+#item3_clue_up{
+    position: fixed;
+}
+#item3_clue_down{
+    position: fixed;
+}
+#item3_clue_left{
+    position: fixed;
+}
+#item3_clue_right{
+    position: fixed;
+}
+
+#item1{
+    position: fixed;
+}
+#item2{
+    position: fixed;
+}
+#item3{
+    position: fixed;
+}
+
+
+#actions{
+    border-radius: 12px;
+    position: fixed;
+    top: 302px;
+    left: 516px;
+    width: 184px;
+    height: 514px;
+    background-color: rgb(255, 228, 159);
+    border: 2px solid rgb(0, 0, 0);
+    position: relative;
+}
+#urgu_name{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 20px;
+}
+#urgu_choose{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    font-size: 20px;
+}
+#remain_count{
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    font-size: 20px;
+}
+#up{
+    border-radius: 12px;
+    background-color: white; 
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    top: 140px;
+    left: 10px;
+}
+#left{
+    border-radius: 12px;
+    background-color: white; 
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    top: 190px;
+    left: 10px;
+}
+#right{
+    border-radius: 12px;
+    background-color: white; 
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    top: 190px;
+    left: 97px;
+}
+#down{
+    border-radius: 12px;
+    background-color: white; 
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    top: 140px;
+    left: 97px;
+}
+#dig{
+    border-radius: 12px;
+    background-color: white; 
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    top: 240px;
+    left: 10px;
+}
+#action_comfirm{
+    position: absolute;
+    top: 280px;
+    left: 10px;
+    font-size: 20px;
+}
+
+#hole_com{
+    position: absolute;
+    top: 320px;
+    left: 10px;
+    font-size: 15px;
+}
+#game_com{
+    position: absolute;
+    top: 360px;
+    left: 10px;
+    font-size: 15px;
+}
+#item_com{
+    position: absolute;
+    top: 400px;
+    left: 10px;
+    font-size: 15px;
+}
+#cont_com{
+    position: absolute;
+    top: 440px;
+    left: 10px;
+    font-size: 15px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>The IK-1 team is on a mission</title>
+</head>
+<body>
+    <!-- remove hidden -->
+    <div id="home_screen">
+        <p id="game_name">DESERT EXPEDITION</p>
+        <p id="choose_player_number">Choose player number </p>
+        <select id="player_number" name="player_number">
+            <option value="1">1 Player</option>
+            <option value="2">2 Players</option>
+            <option value="3">3 Players</option>
+            <option value="4">4 Players</option>
+        </select>
+                
+        <p id="p1_p">Player 1:</p> <input type="text" id="p1_i"> 
+        <p id="p2_p" hidden>Player 2:</p> <input type="text" id="p2_i" hidden> 
+        <p id="p3_p" hidden>Player 3:</p> <input type="text" id="p3_i" hidden> 
+        <p id="p4_p" hidden>Player 4:</p> <input type="text" id="p4_i" hidden> 
+
+        <p id="urgu_to_enter_name">Please enter player name(s)</p>
+        <p id="water_supply">How many water bottoles do you want?</p>
+        <select id="water_number" name="water_number">
+            <option value="6">6</option>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+        </select>
+        <p id="time_set">How many minutes do you want? </p>
+        <select id="time_number" name="time_number">
+            <option value="6">6 mins</option>
+            <option value="5">5 mins</option>
+            <option value="4">4 mins</option>
+            <option value="3">3 mins</option>
+        </select>
+        
+        <button id="start">Start!</button>
+    </div>
+
+    
+
+    <!-- add hidden -->
+    <div id="gamescreen" hidden>
+        <div id="game_progress">
+            <div id="countdown">06:00</div>
+            <img id="prImg1" src="Assets/Assets/Item 1.png" width="70" height="70">
+            <p id="pr1">×</p>
+            <img id="prImg2" src="Assets/Assets/Item 2.png" width="70" height="70">
+            <p id="pr2">×</p>
+            <img id="prImg3" src="Assets/Assets/Item 3.png" width="70" height="70">
+            <p id="pr3">×</p>
+        </div>
+
+        <div id="p1_info">
+            <p id="p1_name">Player 1</p>
+            <img id="water_p1" src="Assets/Assets/Water.png" width="40" height="40">
+            <p id="water_num_p1">6</p>
+            <img id="action_p1" src="Assets/Assets/Action Points.png" width="40" height="40">
+            <p id="action_num_p1">3</p>
+            <p id="p1_turn">Your turn!</p>
+        </div>
+        <div id="p2_info">
+            <p id="p2_name">Player 2</p>
+            <img id="water_p2" src="Assets/Assets/Water.png" width="40" height="40">
+            <p id="water_num_p2">6</p>
+            <img id="action_p2" src="Assets/Assets/Action Points.png" width="40" height="40">
+            <p id="action_num_p2">3</p>
+            <p id="p2_turn"></p>
+        </div>
+        <div id="p3_info">
+            <p id="p3_name">Player 3</p>
+            <img id="water_p3" src="Assets/Assets/Water.png" width="40" height="40">
+            <p id="water_num_p3">6</p>
+            <img id="action_p3" src="Assets/Assets/Action Points.png" width="40" height="40">
+            <p id="action_num_p3">3</p>
+            <p id="p3_turn"></p>
+        </div>
+        <div id="p4_info">
+            <p id="p4_name">Player 4</p>
+            <img id="water_p4" src="Assets/Assets/Water.png" width="40" height="40">
+            <p id="water_num_p4">6</p>
+            <img id="action_p4" src="Assets/Assets/Action Points.png" width="40" height="40">
+            <p id="action_num_p4">3</p>
+            <p id="p4_turn"></p>
+        </div>
+
+        <div id="board">
+            <div id="mt0"></div>
+            <div id="mt1"></div>
+            <div id="mt2"></div>
+            <div id="mt3"></div>
+            <div id="mt4"></div>
+            <div id="mt5"></div>
+            <div id="mt6"></div>
+            <div id="mt7"></div>
+            <div id="mt8"></div>
+            <div id="mt9"></div>
+            <div id="mt10"></div>
+            <div id="mt11"></div>
+            <div id="mt12"></div>
+            <div id="mt13"></div>
+            <div id="mt14"></div>
+            <div id="mt15"></div>
+            <div id="mt16"></div>
+            <div id="mt17"></div>
+            <div id="mt18"></div>
+            <div id="mt19"></div>
+            <div id="mt20"></div>
+            <div id="mt21"></div>
+            <div id="mt22"></div>
+            <div id="mt23"></div>
+            <div id="mt24"></div>
+
+            <img id="player" src="Assets/Assets/Player.png" width="97" height="97">
+            <img id="stargate" src="Assets/Assets/Stargate.png" width="97" height="97">
+            <img id="oasis_pre1" src="Assets/Assets/Oasis marker.png" width="97" height="97">
+            <img id="oasis_pre2" src="Assets/Assets/Oasis marker.png" width="97" height="97" hidden>
+            <img id="oasis_pre3" src="Assets/Assets/Oasis marker.png" width="97" height="97" hidden>
+            <img id="oasis_pre4" src="Assets/Assets/Oasis marker.png" width="97" height="97" hidden>
+            
+            <img id="oasis1" src="Assets/Assets/Oasis.png" width="97" height="97" hidden>
+            <img id="oasis2" src="Assets/Assets/Oasis.png" width="97" height="97" hidden>
+            <img id="oasis3" src="Assets/Assets/Oasis.png" width="97" height="97" hidden>
+            <img id="drought" src="Assets/Assets/Drought.png" width="97" height="97" hidden>
+            <img id="hole" src="Assets/Assets/Hole.png" width="97" height="97" hidden>
+            
+
+            <img id="item1_clue_up" src="Assets/Assets/Item 1 - clue_UP.png" width="97" height="97" hidden>
+            <img id="item1_clue_down" src="Assets/Assets/Item 1 - clue_DOWN.png" width="97" height="97" hidden>
+            <img id="item1_clue_left" src="Assets/Assets/Item 1 - clue_LEFT.png" width="97" height="97" hidden>
+            <img id="item1_clue_right" src="Assets/Assets/Item 1 - clue_RIGHT.png" width="97" height="97" hidden>
+            <img id="item2_clue_up" src="Assets/Assets/Item 2 - clue_UP.png" width="97" height="97" hidden>
+            <img id="item2_clue_down" src="Assets/Assets/Item 2 - clue_DOWN.png" width="97" height="97" hidden>
+            <img id="item2_clue_left" src="Assets/Assets/Item 2 - clue_LEFT.png" width="97" height="97" hidden>
+            <img id="item2_clue_right" src="Assets/Assets/Item 2 - clue_RIGHT.png" width="97" height="97" hidden>
+            <img id="item3_clue_up" src="Assets/Assets/Item 3 - clue_UP.png" width="97" height="97" hidden>
+            <img id="item3_clue_down" src="Assets/Assets/Item 3 - clue_DOWN.png" width="97" height="97" hidden>
+            <img id="item3_clue_left" src="Assets/Assets/Item 3 - clue_LEFT.png" width="97" height="97" hidden>
+            <img id="item3_clue_right" src="Assets/Assets/Item 3 - clue_RIGHT.png" width="97" height="97" hidden>
+
+            <img id="item1" src="Assets/Assets/Item 1.png" width="97" height="97" hidden>
+            <img id="item2" src="Assets/Assets/Item 2.png" width="97" height="97" hidden>
+            <img id="item3" src="Assets/Assets/Item 3.png" width="97" height="97" hidden>
+            
+        </div>
+
+        <div id="actions">
+            <p id="urgu_name">Player 1.</p>
+            <p id="urgu_choose">Choose your action!</p>
+            <p id="remain_count">Remaining times: 3</p>
+            <button id="up">UP</button>
+            <button id="left">FELT</button>
+            <button id="right">RIGHT</button>
+            <button id="down">DOWN</button>
+            <button id="dig">DIG</button>
+            <p id="action_comfirm">Action is done.</p>
+            <p id="hole_com">Hole: You will lose half of your bottles.</p>
+            <p id="game_com">Game Over: If one of you runs out of water, or time.</p>
+            <p id="item_com">A item can be found after two clues are found.</p>
+            <p id="cont_com">You can also play with your keyboard: ↑ up ↓ down → right     ← left ctrl dig</p>
+
+        </div>
+    </div>
+    <div id="win" hidden>
+        <p id="win_name">YOU WON!</p>
+        <p id="win_comment"></p>
+    </div>
+    <div id="lose" hidden>
+        <p id="lose_name">YOU LOSE...</p>
+        <p id="lose_comment"></p>
+    </div>
+    
+    <!-- <script src="script.js"></script> -->
+    <script src="script2.js"></script>
+
+</body>
+</html>
